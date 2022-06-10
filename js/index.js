@@ -19,7 +19,7 @@ var app = {
         document.getElementById("capture-btn").addEventListener(
             "click",
             function () {
-                var element = document.getElementsByClassName("root");
+                var element = document.getElementById("root");
                 html2canvas(element, {
                     onrendered: function (canvas) {
                         var dataURL = canvas.toDataURL();
