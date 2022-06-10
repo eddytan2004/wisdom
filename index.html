@@ -1,13 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="theme-color" content="#000000" />
-        <meta name="description" content="wisdom" />
+        <meta name="viewport" content="width=device-width, maximum-scale=1, user-scalable=no" />
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
         <title>Wisdom Voucher</title>
+        <script src="./js/html2canvas.min.js"></script>
     </head>
     <body>
-        Hello World!!
+        <div id="root">
+            <img src="./voucher.png" alt="voucher" />
+        </div>
+        <button id="capture-btn">Submit</button>
+        <button id="email-btn">Sent</button>
+        <img id="screenshotimg" />
+        <script type="text/javascript" src="./js/index.js"></script>
     </body>
 </html>
